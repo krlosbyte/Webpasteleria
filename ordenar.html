@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Pasteleria Frankie</title>
+       <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+         background-color: #ececec;
+        }
+        .centro{
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+        th{
+            text-align: center;
+        }
+        .boton{
+            height: 35px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .caja{
+         background-color: #f8f8f8;
+         padding: 15px;
+         text-align: center;
+         max-width: 1000px;
+         margin-left: auto;
+         margin-right: auto;
+        }
+    </style>
+   </head>
+   <body>
+    <section class="caja">
+       <a href="./"><img src="https://i.imgur.com/3ZMsyiF.png" alt="Pasteleria Frankie" width="320px"></a><br>
+       <tr>
+        <th><a href="./">Inicio</a> |</th>
+        <th><a href="./ordenar.html">Pedir</a> |</th>
+        <th><a href="./panel.html">Panel</a></th>
+       </tr>
+       <hr>
+       <h2>Realiza tu Pedido Aquí</h2><br>
+       <form action="/pedido.js" id="formpedido" method="post">
+           <label for="nombre">Nombre Completo:</label><br>
+           <input type="text" id="nombre" name="nombre" size="40"><br><br>
+           <label for="telefono">Telefono:</label><br>
+           <input type="tel" id="telefono" name="telefono" maxlength="10" size="40"><br><br>
+           <label for="correo">Correo:</label><br>
+           <input type="email" id="correo" name="correo" size="35"><br><br>
+           <label for="listapasteles">Selecciona un Pastel:</label><br>
+           <select name="listapasteles" id="listapasteles">
+               <option value="americano">Pastel Americano</option>
+               <option value="moka">Pastel de Moka</option>
+               <option value="chocolate">Pastel de Chocolate</option>
+               <option value="frutasbosque">Pastel Frutas del Bosque</option>
+               <option value="tresleches">Pastel Tres Leches</option>
+               <option value="lunanueva">Pastel Luna Nueva</option>
+               <option value="queso">Pastel de Queso</option>
+               <option value="milhojas">Pastel Mil Hojas</option>
+               <option value="capuchino">Pastel Capuchino</option>
+               <option value="aleman">Pastel Aleman</option>
+           </select><br><br>
+           <label for="listaadornos">Adornos / Decoraciones:</label><br>
+           <select name="listaadornos" id="listaadornos">
+               <option value="no">No</option>
+               <option value="velascu">Velas de Cumpleaños</option>
+               <option value="figurap">Figura Pareja</option>
+               <option value="glasnombre">Glaseado Nombre</option>
+               <option value="espoazucar">Espolvoreado Azúcar Glass</option>
+               <option value="espochoco">Espolvoreado Chocolate</option>
+               <option value="espochocobl">Espolvoreado Chocolate Blanco</option>
+               <option value="cubiertacremavell">Cubierta de Crema de Avellanas</option>
+           </select><br><br>
+           <label for="nota">Nota o Instrucciones para el Pedido</label><br>
+           <input type="text" id="nota" name="nota" size="35"><br><br>
+
+           <h3>Combinar Sabores o Agregar Adorno</h3>
+           <label for="listapastelesextra">Combinar Sabores:</label><br>
+           <select name="listapastelesextra" id="listapastelesextra">
+            <option value="no">No</option>
+            <option value="americano">Pastel Americano</option>
+            <option value="moka">Pastel de Moka</option>
+            <option value="chocolate">Pastel de Chocolate</option>
+            <option value="frutasbosque">Pastel Frutas del Bosque</option>
+            <option value="tresleches">Pastel Tres Leches</option>
+            <option value="lunanueva">Pastel Luna Nueva</option>
+            <option value="queso">Pastel de Queso</option>
+            <option value="milhojas">Pastel Mil Hojas</option>
+            <option value="capuchino">Pastel Capuchino</option>
+            <option value="aleman">Pastel Aleman</option><br><br>
+        </select><br><br>
+        <label for="listaadornoextra">Agregar Adorno:</label><br>
+        <select name="listaadornoextra" id="listaadornoextra">
+            <option value="no">No</option>
+            <option value="velascu">Velas de Cumpleaños</option>
+            <option value="figurap">Figura Pareja</option>
+            <option value="glasnombre">Glaseado Nombre</option>
+            <option value="espoazucar">Espolvoreado Azúcar Glass</option>
+            <option value="espochoco">Espolvoreado Chocolate</option>
+            <option value="espochocobl">Espolvoreado Chocolate Blanco</option>
+            <option value="cubiertacremavell">Cubierta de Crema de Avellanas</option>
+        </select><br><br>
+        <input type="submit" class="boton" value="Enviar Pedido">
+       </form>
+
+    <br><br>
+    <hr>
+    <p>Moctezuma 490, Valle del Tepeyac, 07740 Ciudad de México.</p>
+    <p>Tel. 5555505050</p>
+    <p>Horario: 8:00AM - 10:30PM</p>
+    </section>
+   </body>
+</html>
